@@ -6,6 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		182B9FF52D466CEA00CD22B9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B9FF42D466CEA00CD22B9 /* MessageUI.framework */; };
+		182B9FF72D466D0700CD22B9 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B9FF62D466D0700CD22B9 /* CoreServices.framework */; };
+		182B9FF92D466D1300CD22B9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B9FF82D466D1300CD22B9 /* Security.framework */; };
+		182B9FFB2D466D2000CD22B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B9FFA2D466D2000CD22B9 /* SystemConfiguration.framework */; };
+		182B9FFF2D466D4700CD22B9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182B9FFE2D466D4700CD22B9 /* ImageIO.framework */; };
+		182BA0012D466D5000CD22B9 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0002D466D5000CD22B9 /* LocalAuthentication.framework */; };
+		182BA0032D466D5B00CD22B9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0022D466D5B00CD22B9 /* AudioToolbox.framework */; };
+		182BA0052D466D6600CD22B9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0042D466D6600CD22B9 /* QuartzCore.framework */; };
+		182BA0072D466D6F00CD22B9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0062D466D6F00CD22B9 /* WebKit.framework */; };
+		182BA0092D466D7D00CD22B9 /* MetricKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0082D466D7D00CD22B9 /* MetricKit.framework */; };
+		182BA0562D46844100CD22B9 /* IntuneMAMSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0542D46844100CD22B9 /* IntuneMAMSwift.xcframework */; };
+		182BA0572D46844100CD22B9 /* IntuneMAMSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0542D46844100CD22B9 /* IntuneMAMSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		182BA0582D46844100CD22B9 /* IntuneMAMSwiftStub.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0552D46844100CD22B9 /* IntuneMAMSwiftStub.xcframework */; };
+		182BA0592D46844100CD22B9 /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA0552D46844100CD22B9 /* IntuneMAMSwiftStub.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		182BA0602D469B8000CD22B9 /* MSAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA05F2D469B8000CD22B9 /* MSAL.xcframework */; };
+		182BA0612D469B8100CD22B9 /* MSAL.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 182BA05F2D469B8000CD22B9 /* MSAL.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		182B9FCF2D466AB100CD22B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +42,41 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		182BA05A2D46844100CD22B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				182BA0612D469B8100CD22B9 /* MSAL.xcframework in Embed Frameworks */,
+				182BA0592D46844100CD22B9 /* IntuneMAMSwiftStub.xcframework in Embed Frameworks */,
+				182BA0572D46844100CD22B9 /* IntuneMAMSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		182B9FB82D466AAE00CD22B9 /* loginandEnrollAccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginandEnrollAccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182B9FCE2D466AB100CD22B9 /* loginandEnrollAccountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginandEnrollAccountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		182B9FD82D466AB100CD22B9 /* loginandEnrollAccountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loginandEnrollAccountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		182B9FF42D466CEA00CD22B9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		182B9FF62D466D0700CD22B9 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		182B9FF82D466D1300CD22B9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		182B9FFA2D466D2000CD22B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		182B9FFC2D466D2A00CD22B9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		182B9FFD2D466D3D00CD22B9 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		182B9FFE2D466D4700CD22B9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		182BA0002D466D5000CD22B9 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		182BA0022D466D5B00CD22B9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		182BA0042D466D6600CD22B9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		182BA0062D466D6F00CD22B9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		182BA0082D466D7D00CD22B9 /* MetricKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetricKit.framework; path = System/Library/Frameworks/MetricKit.framework; sourceTree = SDKROOT; };
+		182BA0542D46844100CD22B9 /* IntuneMAMSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IntuneMAMSwift.xcframework; path = "../../../../Downloads/IntuneSDK/ms-intune-app-sdk-ios/IntuneMAMSwift.xcframework"; sourceTree = "<group>"; };
+		182BA0552D46844100CD22B9 /* IntuneMAMSwiftStub.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IntuneMAMSwiftStub.xcframework; path = "../../../../Downloads/IntuneSDK/ms-intune-app-sdk-ios/IntuneMAMSwiftStub.xcframework"; sourceTree = "<group>"; };
+		182BA05F2D469B8000CD22B9 /* MSAL.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:UBF8T346G9:Microsoft Corporation"; lastKnownFileType = wrapper.xcframework; name = MSAL.xcframework; path = ../../../../Downloads/MSAL.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +115,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182BA0562D46844100CD22B9 /* IntuneMAMSwift.xcframework in Frameworks */,
+				182BA0052D466D6600CD22B9 /* QuartzCore.framework in Frameworks */,
+				182B9FF92D466D1300CD22B9 /* Security.framework in Frameworks */,
+				182B9FFF2D466D4700CD22B9 /* ImageIO.framework in Frameworks */,
+				182BA0012D466D5000CD22B9 /* LocalAuthentication.framework in Frameworks */,
+				182BA0032D466D5B00CD22B9 /* AudioToolbox.framework in Frameworks */,
+				182BA0092D466D7D00CD22B9 /* MetricKit.framework in Frameworks */,
+				182B9FF52D466CEA00CD22B9 /* MessageUI.framework in Frameworks */,
+				182B9FFB2D466D2000CD22B9 /* SystemConfiguration.framework in Frameworks */,
+				182B9FF72D466D0700CD22B9 /* CoreServices.framework in Frameworks */,
+				182BA0582D46844100CD22B9 /* IntuneMAMSwiftStub.xcframework in Frameworks */,
+				182BA0602D469B8000CD22B9 /* MSAL.xcframework in Frameworks */,
+				182BA0072D466D6F00CD22B9 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +154,7 @@
 				182B9FBA2D466AAE00CD22B9 /* loginandEnrollAccount */,
 				182B9FD12D466AB100CD22B9 /* loginandEnrollAccountTests */,
 				182B9FDB2D466AB100CD22B9 /* loginandEnrollAccountUITests */,
+				182B9FEC2D466C9600CD22B9 /* Frameworks */,
 				182B9FB92D466AAE00CD22B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,6 +169,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		182B9FEC2D466C9600CD22B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				182BA05F2D469B8000CD22B9 /* MSAL.xcframework */,
+				182BA0542D46844100CD22B9 /* IntuneMAMSwift.xcframework */,
+				182BA0552D46844100CD22B9 /* IntuneMAMSwiftStub.xcframework */,
+				182BA0082D466D7D00CD22B9 /* MetricKit.framework */,
+				182BA0062D466D6F00CD22B9 /* WebKit.framework */,
+				182BA0042D466D6600CD22B9 /* QuartzCore.framework */,
+				182BA0022D466D5B00CD22B9 /* AudioToolbox.framework */,
+				182BA0002D466D5000CD22B9 /* LocalAuthentication.framework */,
+				182B9FFE2D466D4700CD22B9 /* ImageIO.framework */,
+				182B9FFD2D466D3D00CD22B9 /* libc++.tbd */,
+				182B9FFC2D466D2A00CD22B9 /* libsqlite3.tbd */,
+				182B9FFA2D466D2000CD22B9 /* SystemConfiguration.framework */,
+				182B9FF82D466D1300CD22B9 /* Security.framework */,
+				182B9FF62D466D0700CD22B9 /* CoreServices.framework */,
+				182B9FF42D466CEA00CD22B9 /* MessageUI.framework */,
+			);
+			name = Frameworks;
+			path = ../../../../../../../../../Users/rchisman/Documents/Projects/Intune/loginandEnrollAccount;
+			sourceTree = SDKROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,6 +202,7 @@
 				182B9FB42D466AAE00CD22B9 /* Sources */,
 				182B9FB52D466AAE00CD22B9 /* Frameworks */,
 				182B9FB62D466AAE00CD22B9 /* Resources */,
+				182BA05A2D46844100CD22B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = loginandEnrollAccount/loginandEnrollAccount.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -314,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = loginandEnrollAccount/loginandEnrollAccount.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
