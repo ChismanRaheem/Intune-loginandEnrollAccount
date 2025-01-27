@@ -23,8 +23,7 @@ https://learn.microsoft.com/en-us/mem/intune/developer/app-sdk-ios-phase3#apps-t
 </thead>
 <tbody>
 <tr>
-<td>AutoEnrollOnLaunch</td>
-<td>Boolean</td>
+
 <td>[Specifies whether the app should attempt to automatically enroll on launch if an existing managed identity is detected and it has not yet done so. Defaults to NO. <br><br> Note: If no managed identity is found or no valid token for the identity is available in the ADAL/MSAL cache, the enrollment attempt will silently fail without prompting for credentials, unless the app has also set MAMPolicyRequired to YES.](https://learn.microsoft.com/en-us/mem/intune/developer/app-sdk-ios-phase3#apps-that-dont-use-adal-or-msal)</td>
 </tr>
 
