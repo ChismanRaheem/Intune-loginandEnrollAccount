@@ -16,15 +16,11 @@ https://learn.microsoft.com/en-us/mem/intune/developer/app-sdk-ios-phase3#apps-t
 <table aria-label="Table 3" class="table table-sm margin-top-none">
 <thead>
 <tr>
-<th>Setting</th>
-<th>Type</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
+<td>By calling this method, the SDK will prompt the user for credentials if no existing token can be found. The SDK will then try to enroll the app with the Intune MAM service on behalf of the supplied user account. The method can be called with "nil" as the identity. In that case, the SDK will enroll with the existing managed user on the device (in the case of MDM), or prompt the user for a user name if no existing user is found.
 
-<td>[Specifies whether the app should attempt to automatically enroll on launch if an existing managed identity is detected and it has not yet done so. Defaults to NO. <br><br> Note: If no managed identity is found or no valid token for the identity is available in the ADAL/MSAL cache, the enrollment attempt will silently fail without prompting for credentials, unless the app has also set MAMPolicyRequired to YES.](https://learn.microsoft.com/en-us/mem/intune/developer/app-sdk-ios-phase3#apps-that-dont-use-adal-or-msal)</td>
+If the enrollment fails, the app should consider calling this API again at a future time, depending on the details of the failure. The app can receive notifications, via a delegate, about the results of any enrollment requests.
+
+After this API has been invoked, the app can continue functioning as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required. Once the app is managed, the Entra object ID value needs to be queried using enrolledAccountId in the IntuneMAMEnrollmentManager. Use this for all the MAM SDK APIs that the app uses for this enrolled account.</td>
 </tr>
 
 </tbody>
